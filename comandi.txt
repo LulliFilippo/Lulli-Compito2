@@ -1,0 +1,30 @@
+   37  git checkout newFeature-Navbar 
+   38  git add -A
+   39  git commit -m "modified navbar"
+   40  git push
+   41  git push --set-upstream origin newFeature-Navbar
+   42  git checkout master 
+   43  git add -A
+   44  git commit -m "modified navbar ON MASTER"
+   45  git merge newFeature-Navbar 
+   46  git commit -m "conflitto"
+   47  git add -A
+   48  git commit -m "conflitto"
+   49  git push
+   50  clear
+   51  git clone https://github.com/sena-meucci/progettoStampa.git
+   52  ls
+   53  cd progettoStampa/
+   54  ls
+   55  nano stampa.cpp 
+   56  git add -A
+   57  git commit -m "inserito nome"
+   58  git branch BugFix
+   59  git checkout BugFix 
+   60  gir add -A
+   61  git add -A
+   62  git commit -m "errore risolto in stampa"
+   63  git checkout master
+   64  git merge BugFix 
+   65  git branch -d BugFix 
+   66  history 30 > comandi.txt
